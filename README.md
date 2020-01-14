@@ -5,6 +5,7 @@
 * php-zip
 * php-sqlite3
 
+### Fonctionnement et Usages
 1) La liste initiale(553159 mots) a été construite à partir du registre Morphalou-2.0 du CNRTL(Extraction/conversion des données XML originales)
 2) Chaque mots ont été recherchés(contre-vérification) dans le wiktionnaire pour acquérir la définition.
 3) Après les vérifications croisés, il apparaît que plus de 93% des mots du Morphalou-2.0 sont défini 'tel quel' dans le wiktionnaire.
