@@ -27,8 +27,9 @@ $alfredDB = "./alfred2.db";
 
 $zip = new ZipArchive;
 if(file_exists($alfredDB)===false){
-file_put_contents($alfredDB_zip, fopen($alfredDB_url, 'r'));
-
+        if(file_exists($alfredDB_zip)===false){
+        file_put_contents($alfredDB_zip, fopen($alfredDB_url, 'r'));
+        }
 	if ($zip->open($alfredDB_zip) === TRUE) {
 	    $zip->extractTo(_PATH);
 	    $zip->close();
